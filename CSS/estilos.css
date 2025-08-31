@@ -5,6 +5,10 @@
 }
 /*NavBar*/
 
+header{
+    position: sticky;
+}
+
 .mobile{
     display: none;
 }
@@ -32,13 +36,13 @@
 .logo{
     width: 8rem;
     position: relative;
-    left: 150px;
+    left: 100px;
 }
 
 .cont_text_nav{
     display: flex;
     position: relative;
-    right: 200px;
+    right: 450px;
 }
 
 .link{
@@ -70,6 +74,35 @@
     font-size: 1rem;
 }
 
+/* Descripcion de una obra */
+
+.orden_main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 10px;
+}
+
+
+
+.img{
+    width: 25rem;
+    margin-left:30px ;
+    border:solid black 1px;
+    border-radius: 20%;
+}
+
+.cont_commit{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    background-color: rgb(179, 175, 175);
+    justify-items: center;
+    align-items: center;
+    padding: 15px;
+    width: fit-content; 
+    height: fit-content;
+    margin-right: 30px;
+}
+
 /*Responsive Dashboard*/
 @media (max-width: 600px){
     .cont{
@@ -94,11 +127,39 @@
         display: none;
     }
 
-
-
     .logo{
-        width: 8rem;
+        width: 6rem;
         position: relative;
         left: 50px;
     }
+
+    .img{
+        width: 18rem;
+        margin-left:10px ;
+        border:solid black 1px;
+        border-radius: 20%; 
+        position: relative;
+        left: 20px;
+    }
+
+    .orden_main{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .cont_commit{
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: rgb(179, 175, 175);
+        justify-items: center;
+        align-items: center;
+        padding: 15px;
+        width: fit-content; 
+        height: fit-content;
+        margin-top: 15px;
+        position: relative;
+        left: 50px;
+}
 }
