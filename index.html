@@ -3,9 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/general.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/principal.css">
+    <link rel="icon" href="./img/icono_menu.png">
+    <title>Panel principal</title>
 </head>
 <body>
-    
+    <header>
+        <img id="menu" class="icono_menu" src="./img/icono_menu.png" alt="Imagen menú">
+        <img class="logotipo" src="./img/logotipo.png" alt="logotipo">
+    </header>
+    <main>
+        <div id="estadisticas" class="container-fluid">
+            <div class="row">
+                <div id="visitas" class="col-lg-6 col-md-12">
+                    <h1>Visitas del sitio</h1>
+                    <div class="un_tercio d-flex justify-content-around align-items-center flex-md-row flex-sm-column flex-column">
+                        <div class="margenes" id="visitas_tt">
+                            <span class="h3">Pico histórico</span>
+                            <span>30000</span>
+                        </div>
+                        <div class="margenes" id="visitas_a">
+                            <span class="h2">Activos</span>
+                            <span>20000</span>
+                        </div>
+                        <div class="margenes" id="visitas_24">
+                            <span class="h3">Pico de hoy</span>
+                            <span>25000</span>
+                        </div>
+                    </div>
+                    <div class="dos_tercios margenes">
+                        <canvas id="grafico_visitas"></canvas>
+                    </div>
+                </div>
+                <div id="consumo" class="margenes col-lg-6 col-md-12 carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#consumo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#consumo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#consumo" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div style="background-color: #0B0043;" class="grafico carousel-item active">
+                            <h2>Géneros más visitados</h2>
+                            <canvas id="generos"></canvas>
+                        </div>
+                        <div style="background-color: #130071;" class="grafico carousel-item">
+                            <h2>Medios más apreciados</h2>
+                            <canvas id="medios"></canvas>
+                        </div>
+                        <div style="background-color: #2200CE;" class="grafico carousel-item">
+                            <h2>Obras más buscadas</h2>
+                            <canvas id="obras"></canvas>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#consumo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#consumo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <div id="barra_lateral" class="no_desplegada">
+            <i class="bi bi-x"></i>
+            <ul>
+                <li>
+                    <a href="">Estadísticas</a>
+                </li>
+                <li>
+                    <a href="">Obras</a>
+                </li>
+            </ul>
+        </div>
+    </main>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./js/graficos.js"></script>
+<script src="./js/menu.js"></script>
 </html>

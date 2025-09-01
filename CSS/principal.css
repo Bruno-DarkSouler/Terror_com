@@ -1,0 +1,55 @@
+h2, h1{
+    text-align: center;
+}
+
+#estadisticas{
+    min-height: 90vh;
+    background-color: var(--azul);
+}
+
+.row{
+    height: inherit;
+    margin: auto;
+    padding: 0;
+}
+
+.row div{
+    padding: 0;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.un_tercio{
+    height: calc(30vh - 3rem);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.dos_tercios{
+    height: calc(60vh - 3rem);
+    margin: 1rem;
+    margin-top: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grafico{
+    height: 90vh;
+    padding: 3rem;
+}
+
+.grafico canvas{
+    margin: 1rem;
+    margin-top: 10rem;
+}
+
+#visitas_tt, #visitas_a, #visitas_24{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
