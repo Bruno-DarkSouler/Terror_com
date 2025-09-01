@@ -6,6 +6,9 @@
     <title>Informacion</title>
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body class="fondo">
     <header>
@@ -16,24 +19,50 @@
     </header>
     <main>
         <h1 class="titulo">Informacion</h1>
-       <div class="cont">
-        <p class="text">Nombre</p>
-        <p class="text">Favorito</p>
-        <p class="text">Me gusto</p>
-        <p class="text">No me gusto</p>
-        <p class="text">Me aburrio</p>
-        <p class="text">Leyendo</p>
-        <p class="text">Medios</p>
-       </div>
-       <div class="cont">
-        <p class="text">Berserk</p>
-        <p class="text">✅</p>
-        <p class="text">✅</p>
-        <p class="text">❌</p>
-        <p class="text">❌</p>
-        <p class="text">Leido</p>
-        <p class="text">Manga</p>
-       </div>    
+       <div class="container table-responsive">          
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Medio</th>
+                    <th>Favorito</th>
+                    <th>Me gusto</th>
+                    <th>No me gusto</th>
+                    <th>Aburrido</th>
+                    <th>Leyendo</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Berserk</td>
+                    <td>Manga</td>
+                    <td>❤️</td>
+                    <td>✅️</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>Leído</td>
+                </tr>
+                <tr>
+                    <td>El exorcista</td>
+                    <td>Pelicula</td>
+                    <td>❌</td>
+                    <td>✅️</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>Visto</td>
+                </tr>
+                <tr>
+                    <td>Silent Hill 2</td>
+                    <td>VideoJuego</td>
+                    <td>❤️</td>
+                    <td>✅️</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>Jugando</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
 </body>
 </html>
