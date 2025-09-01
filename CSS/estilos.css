@@ -178,11 +178,14 @@ header{
         background-color: rgb(179, 175, 175);
         justify-items: center;
         align-items: center;
-        padding: 15px;
+        padding: 10px;
         width: fit-content; 
         height: fit-content;
         margin-top: 15px;
-        position: relative;
-        left: 50px;
+    }
+
+    .espacio{
+        margin: 5px;
+        padding: 5px;
     }
 }
