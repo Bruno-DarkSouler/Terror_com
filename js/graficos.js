@@ -41,10 +41,10 @@ const generos = document.getElementById('generos');
 new Chart(generos, {
   type: 'bar', // cambia a 'bar' para barras
   data: {
-    labels: ['Enero', 'Febrero', 'Marzo', 'Abril'],
+    labels: ['Terror Analógico', 'Terror Digital', 'Slasher', 'Psicológico', 'Monstruos', 'Metraje encontrado', 'Misterio', 'Zombis', 'Religioso'],
     datasets: [{
       label: 'Ventas',
-      data: [12, 19, 3, 5],
+      data: [20000, 10000, 25000, 20000, 21000, 7000, 11000, 23000, 27000],
       borderColor: '#ff5722',      // color de la línea
       backgroundColor: 'rgba(255, 87, 34, 0.2)', // relleno debajo de la línea
       borderWidth: 3,              // grosor de la línea

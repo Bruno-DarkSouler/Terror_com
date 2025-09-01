@@ -72,6 +72,14 @@ main{
     display: none;
 }
 
+#barra_lateral a{
+    display: contents;
+}
+
+#barra_lateral li:hover{
+    background-color: var(--celeste1);
+}
+
 @keyframes despliegue{
     0%{width: 0;}
     100%{width: var(--barra_lateral);}
