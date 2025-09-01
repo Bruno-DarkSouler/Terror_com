@@ -18,7 +18,6 @@ header{
     justify-content: space-around;
     align-items: center;
     background-color: rgb(8, 8, 82);
-
 }
 .estilo{
     list-style: none;
@@ -59,15 +58,10 @@ header{
     margin: 20px;
     font-size: 2.5rem;
 }
-.cont{
-    display: grid;
-    grid-template-columns: repeat(7, 2fr);
-    background-color: rgb(179, 175, 175);
-    justify-items: center;
-    align-items: center;
-    padding: 15px;
-}
 
+.container{
+    background-color: rgb(179, 175, 175);
+}
 
 .text{
     color: white;
@@ -161,5 +155,5 @@ header{
         margin-top: 15px;
         position: relative;
         left: 50px;
-}
+    }
 }
