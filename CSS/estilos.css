@@ -76,11 +76,9 @@ header{
     margin: 10px;
 }
 
-
-
 .img{
-    width: 25rem;
-    margin-left:30px ;
+    width: 20rem;
+    margin:15px ;
     border:solid black 1px;
     border-radius: 20%;
 }
@@ -95,6 +93,37 @@ header{
     width: fit-content; 
     height: fit-content;
     margin-right: 30px;
+    border: solid rgb(100, 100, 100) 2px;
+    border-radius: 20%;
+}
+
+/*Perfil*/
+
+.espacio{
+    margin: 15px;
+    padding: 10px;
+}
+
+.perfil{
+    width: 3rem;
+    border: solid black 2px;
+    border-radius: 100%;
+}
+
+.perfil2{
+    width: 2.5rem;
+    border: solid black 2px;
+    border-radius: 100%;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.user_name{
+    margin: 5px;
 }
 
 /*Responsive Dashboard*/
