@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Berserk</title>
-    <link rel="stylesheet" href="../CSS/general.css">
-    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" href="./img/logotipo.png">
 </head>
 <body class="fondo">
     <header>
-        <a href="#barra_lateral">
-            <img class="icono_menu" src="../img/icono_menu.png" alt="Imagen menú">
-        </a>
+        <img id="menu" class="icono_menu" src="../img/icono_menu.png" alt="Imagen menú">
         <img class="logotipo" src="../img/logotipo.png" alt="logotipo">
     </header>
 
@@ -46,8 +45,32 @@
             </div>
         </section>
     </main>
+        <div id="barra_lateral" class="no_desplegada">
+            <svg id="cerrar_menu" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+            <ul class="mt-1">
+                <li class="enlace_nav">
+                    <a href="../index.html">Estadísticas</a>
+                </li>
+                <li class="enlace_nav">
+                    <a href="../pages/dashboard.html">Tabla de obras</a>
+                </li>
+                <li>
+                    <li class="enlace_nav" data-bs-toggle="collapse" data-bs-target="#lista_obras">Obras</li>
+                    <ul id="lista_obras" class="collapse">
+                        <li><a href="../pages/comentarios.html">Berserk</a></li>
+                        <li><a href="../pages/comentarios.html">The Walten Files</a></li>
+                        <li><a href="../pages/comentarios.html">Saw</a></li>
+                        <li><a href="../pages/comentarios.html">Gemini Home Enterteinment</a></li>
+                        <li><a href="../pages/comentarios.html">Midwest Angelica</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     <footer>
         
     </footer>
 </body>
+<script src="../js/menu.js"></script>
 </html>

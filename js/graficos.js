@@ -57,7 +57,7 @@ new Chart(generos, {
     plugins: {
       legend: {
         labels: {
-          color: '#333',           // color del texto de la leyenda
+          color: '#aaa',           // color del texto de la leyenda
           font: { size: 14 }
         }
       }
@@ -68,8 +68,8 @@ new Chart(generos, {
         grid: { color: '#e0e0e0' }   // color de las líneas de la grilla
       },
       y: {
-        ticks: { color: '#d32f2f' }, // color de los números en eje Y
-        grid: { color: '#e0e0e0' }
+        ticks: { color: '#EAE6FF' }, // color de los números en eje Y
+        grid: { color: '#EAE6FF' }
       }
     }
   }
@@ -80,12 +80,12 @@ const medios = document.getElementById('medios');
 new Chart(medios, {
   type: 'bar', // cambia a 'bar' para barras
   data: {
-    labels: ['Enero', 'Febrero', 'Marzo', 'Abril'],
+    labels: ['Pelicula', 'Libro', 'Comic', 'Manga', 'Serie'],
     datasets: [{
-      label: 'Ventas',
-      data: [12, 19, 3, 5],
-      borderColor: '#ff5722',      // color de la línea
-      backgroundColor: 'rgba(255, 87, 34, 0.2)', // relleno debajo de la línea
+      label: 'Visitas',
+      data: [28000, 17000, 8000, 5000, 20000],
+      borderColor: '#79ff75ff',      // color de la línea
+      backgroundColor: '#e7ffe622', // relleno debajo de la línea
       borderWidth: 3,              // grosor de la línea
       pointBackgroundColor: '#2196f3', // color de los puntos
       pointBorderColor: '#000',    // borde de los puntos
@@ -96,7 +96,7 @@ new Chart(medios, {
     plugins: {
       legend: {
         labels: {
-          color: '#333',           // color del texto de la leyenda
+          color: '#aaa',           // color del texto de la leyenda
           font: { size: 14 }
         }
       }
@@ -107,8 +107,8 @@ new Chart(medios, {
         grid: { color: '#e0e0e0' }   // color de las líneas de la grilla
       },
       y: {
-        ticks: { color: '#d32f2f' }, // color de los números en eje Y
-        grid: { color: '#e0e0e0' }
+        ticks: { color: '#EAE6FF' }, // color de los números en eje Y
+        grid: { color: '#EAE6FF' }
       }
     }
   }
@@ -120,12 +120,12 @@ const obras = document.getElementById('obras');
 new Chart(obras, {
   type: 'bar', // cambia a 'bar' para barras
   data: {
-    labels: ['Enero', 'Febrero', 'Marzo', 'Abril'],
+    labels: ['Berserk', 'The Walten Files', 'Saw', 'Midwest Angelica', 'Gemini Home Enterteinment'],
     datasets: [{
-      label: 'Ventas',
-      data: [12, 19, 3, 5],
-      borderColor: '#ff5722',      // color de la línea
-      backgroundColor: 'rgba(255, 87, 34, 0.2)', // relleno debajo de la línea
+      label: 'Visitas',
+      data: [20000, 10000, 24000, 10000, 12000],
+      borderColor: '#fff583ff',      // color de la línea
+      backgroundColor: '#fffde622', // relleno debajo de la línea
       borderWidth: 3,              // grosor de la línea
       pointBackgroundColor: '#2196f3', // color de los puntos
       pointBorderColor: '#000',    // borde de los puntos
@@ -136,7 +136,7 @@ new Chart(obras, {
     plugins: {
       legend: {
         labels: {
-          color: '#333',           // color del texto de la leyenda
+          color: '#aaa',           // color del texto de la leyenda
           font: { size: 14 }
         }
       }
@@ -147,8 +147,8 @@ new Chart(obras, {
         grid: { color: '#e0e0e0' }   // color de las líneas de la grilla
       },
       y: {
-        ticks: { color: '#d32f2f' }, // color de los números en eje Y
-        grid: { color: '#e0e0e0' }
+        ticks: { color: '#EAE6FF' }, // color de los números en eje Y
+        grid: { color: '#EAE6FF' }
       }
     }
   }

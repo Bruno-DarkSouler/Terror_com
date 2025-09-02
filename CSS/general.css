@@ -57,6 +57,7 @@ main{
 
 #barra_lateral ul{
     list-style: none;
+    list-style-position: inside;
 }
 
 #barra_lateral a{
@@ -73,11 +74,15 @@ main{
 }
 
 #barra_lateral a{
-    display: contents;
+    display: block;
 }
 
 #barra_lateral li:hover{
-    background-color: var(--celeste1);
+    background-color: #2200ce86;
+}
+
+.enlace_nav{
+    padding: 1rem;
 }
 
 @keyframes despliegue{
@@ -88,5 +93,11 @@ main{
 @media(width < 510px){
     :root{
         --barra_lateral: 100%;
+    }
+}
+
+@media(width > 510px) and (width < 780px){
+    :root{
+        --barra_lateral: 50%;
     }
 }
