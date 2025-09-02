@@ -59,6 +59,10 @@ header{
     font-size: 2.5rem;
 }
 
+.dsb{
+    color: black;
+}
+
 .container{
     background-color: rgb(179, 175, 175);
 }
@@ -80,7 +84,7 @@ header{
     width: 20rem;
     margin:15px ;
     border:solid black 1px;
-    border-radius: 20%;
+    border-radius: 20px;
 }
 
 .cont_commit{
@@ -94,7 +98,7 @@ header{
     height: fit-content;
     margin-right: 30px;
     border: solid rgb(100, 100, 100) 2px;
-    border-radius: 20%;
+    border-radius: 20px;
 }
 
 /*Perfil*/
@@ -107,13 +111,13 @@ header{
 .perfil{
     width: 3rem;
     border: solid black 2px;
-    border-radius: 100%;
+    border-radius: 100px;
 }
 
 .perfil2{
     width: 2.5rem;
     border: solid black 2px;
-    border-radius: 100%;
+    border-radius: 100px;
 }
 
 .user{
@@ -160,7 +164,7 @@ header{
         width: 18rem;
         margin-left:10px ;
         border:solid black 1px;
-        border-radius: 20%; 
+        border-radius: 20px; 
         position: relative;
         left: 20px;
     }
